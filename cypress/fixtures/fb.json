@@ -1,0 +1,31 @@
+{
+   "dexter":{
+       "url":"https://www.dexter.com.ar/",
+       "login":{
+           "xpachClickSearch":[
+            "//*/header/nav/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/a"
+           ],
+           "xpathInputEmail":"//*[@id='login-form-email']",
+           "xpathInputPassword":"//*[@id='login-form-password']",
+           "email":"qatestingexample@gmail.com",
+           "password":"Qatesting12!",
+           "xpathClick":"//*[@id='login']/form/button"
+       }
+   },
+   "isadora":{
+        "url":"https://ar.isadoraonline.com/?gclid=CjwKCAiA7939BRBMEiwA-hX5J6ZMAKNge4EsQI3OgZS8-cJpwv8Bds9j3zj37D1mNzqqLUbyr6tTmhoCKUkQAvD_BwE",
+        "login":{
+            "xpachClickSearch":[
+                "//*[@id='header']/div[1]/div[2]/div[2]/div/div[2]/a",
+                "//*[@id='header-account']/div/ul/li[5]/a"
+            ],
+            "xpathInputEmail":"//*[@id='email']",
+            "xpathInputPassword":"//*[@id='pass']",
+            "email":"qatestingexample@gmail.com",
+            "password":"Qatesting12!",
+            "xpathClick":"//*[@id='send2']",
+            "hashExpect":"customer/account/"
+            
+        }
+   }
+}
