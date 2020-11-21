@@ -4,10 +4,11 @@ describe('Login generico', () => {
         cy.fixture('fb.json').as("testValues")
     })
 
-    it('Login', ()=>{
+    it('Login isadora', ()=>{
         cy.get('@testValues').then((testValues)=>{
-            const {login,url } = testValues.adidas;
-            cy.login(login,url)
+            const {search,url} = testValues.isadora;
+            cy.visit(url)
+            cy.searchItems(search);
         })
     })
 });

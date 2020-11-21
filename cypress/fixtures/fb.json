@@ -26,6 +26,14 @@
             "xpathClick":"//*[@id='send2']",
             "hashExpect":"customer/account/"
             
+        },
+        "search":{
+            "iconSearch":"//*[@id='header']/div[1]/div[2]/div[2]/div/div[3]/a",
+            "inputSearch":"//*[@id='search']",
+            "inputValue":"reloj",
+            "sendForm":"//*[@id='search_mini_form']/div[1]/button",
+            "item":"//*[@id='top']/body/div[1]/div/div[2]/div/div/div[3]/div[3]/ul/li",
+            "numbersItem":["1","2","3"]
         }
    }
 }

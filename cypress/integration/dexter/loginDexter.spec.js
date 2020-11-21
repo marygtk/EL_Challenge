@@ -4,11 +4,10 @@ describe('Login generico', () => {
         cy.fixture('fb.json').as("testValues")
     })
 
-    it('Login isadora', ()=>{
+    it('Login dexter', ()=>{
         cy.get('@testValues').then((testValues)=>{
-            const {login,url} = testValues.isadora;
+            const {login,url} = testValues.dexter;
             cy.visit(url)
-            cy.xpath('//*[@id="header"]/div[1]/div[2]/div[2]/div/div[2]/a').trigger('mouseover')
             cy.login(login);
         })
     })
