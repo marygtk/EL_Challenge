@@ -5,6 +5,6 @@ Cypress.Commands.add("searchItems", (search) => {
     cy.xpath(sendForm).click();
     numbersItem.forEach(element => {
         cy.xpath(`${item}[${element}]`).click();
-        cy.go('back')
+        //  cy.go('back')
     });
 });
