@@ -9,8 +9,18 @@
            "xpathInputPassword":"//*[@id='login-form-password']",
            "email":"qatestingexample@gmail.com",
            "password":"Qatesting12!",
-           "xpathClick":"//*[@id='login']/form/button"
-       }
+           "xpathClick":"//*[@id='login']/form/button",
+           "hashExpect":"https://www.dexter.com.ar/?registration=false"
+           
+       },
+       "search":{
+        "iconSearch":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[3]/div/div/form/input[1]",
+        "inputSearch":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[3]/div/div/form/input[1]",
+        "inputValue":"adidas",
+        "sendForm":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[3]/div/div/form/button[2]",
+        "item":"//*[@id='product-search-results']/div[2]/div[2]/div[2]/div[1]",
+        "numbersItem":["1","2","3"]
+    }
    },
    "isadora":{
         "url":"https://ar.isadoraonline.com/?gclid=CjwKCAiA7939BRBMEiwA-hX5J6ZMAKNge4EsQI3OgZS8-cJpwv8Bds9j3zj37D1mNzqqLUbyr6tTmhoCKUkQAvD_BwE",
