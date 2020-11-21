@@ -1,4 +1,4 @@
-Cypress.Commands.add("searchItems", (search,callback) => {
+Cypress.Commands.add("searchItems", (search) => {
     const {item,iconSearch,inputSearch,inputValue,numbersItem,sendForm}=search;
     cy.xpath(`${iconSearch}`).click();
     cy.xpath(`${inputSearch}`).type(inputValue);

@@ -4,11 +4,11 @@ describe('Login generico', () => {
         cy.fixture('fb.json').as("testValues")
     })
 
-    it('Search Items', ()=>{
+    it('Login AutomationPractice', ()=>{
         cy.get('@testValues').then((testValues)=>{
-            const {search,url} = testValues.isadora;
+            const {login,url} = testValues.automationPractice;
             cy.visit(url)
-            cy.searchItems(search);
+            cy.login(login);
         })
     })
 });
