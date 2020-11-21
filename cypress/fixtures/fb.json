@@ -20,6 +20,12 @@
         "sendForm":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[3]/div/div/form/button[2]",
         "item":"//*[@id='product-search-results']/div[2]/div[2]/div[2]/div[1]",
         "numbersItem":["1","2","3"]
+    },
+    "addItems":{
+        "clickOnItems":[
+            "//body/div[@id='mainContainer']/div[@id='maincontent']/div[1]/div[2]/div[3]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/div[1]/li[2]/span[1]",
+             "//body/div[@id='mainContainer']/div[@id='maincontent']/div[1]/div[2]/div[3]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/div[1]/li[2]/span[1]"
+         ] 
     }
    },
    "isadora":{
@@ -43,7 +49,12 @@
             "inputValue":"reloj",
             "sendForm":"//*[@id='search_mini_form']/div[1]/button",
             "item":"//*[@id='top']/body/div[1]/div/div[2]/div/div/div[3]/div[3]/ul/li",
-            "numbersItem":["1","2","3"]
+            "numbersItem":["1"]
+        },
+        "addItems":{
+            "clickOnItems":[
+                "//span[contains(text(),'Comprar')]"
+             ] 
         }
    }
 }

@@ -6,9 +6,10 @@ describe('Login generico', () => {
 
     it('Login isadora', ()=>{
         cy.get('@testValues').then((testValues)=>{
-            const {search,url} = testValues.isadora;
+            const {search,url,addItems} = testValues.isadora;
             cy.visit(url)
             cy.searchItems(search);
+            // cy.addItems(addItems);
         })
     })
 });
