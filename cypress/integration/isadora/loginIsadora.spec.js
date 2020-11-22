@@ -1,7 +1,7 @@
 describe('Login generico', () => {
 
     beforeEach(()=>{
-        cy.fixture('fb.json').as("testValues")
+        cy.fixture('interface.json').as("testValues")
     })
 
     it('Login isadora', ()=>{

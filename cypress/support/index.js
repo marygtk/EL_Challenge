@@ -1,7 +1,6 @@
 import './customCommands/loginCommands';
-import './customCommands/searchCommands';
-import './customCommands/AddItemsCommands';
-import './customCommands/likeItemsCommands';
+import './customCommands/itemsCommands';
+import './customCommands/asserstionCommands';
 require('cypress-xpath')
 
 

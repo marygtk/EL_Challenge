@@ -1,5 +1,5 @@
 describe('Search and select item', () => {
-    let local = null;
+
     beforeEach(()=>{
         cy.fixture('interface.json').as("testValues")
     })
@@ -9,18 +9,16 @@ describe('Search and select item', () => {
             const {search,url} = testValues.automationPractice;
             cy.visit(url)
             cy.searchItems(search);
-            cy.location().should((loc) => {
-                local = loc.toString();
-            });
-        });
+        })
     });
 
-    it('Select Item', ()=>{
+    it('Add Items', ()=>{
         cy.get('@testValues').then((testValues)=>{
-            const {selectItem} = testValues.automationPractice;
-            cy.SelectItem(selectItem);
-            cy.locationExpectNotEqual(local);
-        });
+            const {selectItem,addItems} = testValues.automationPractice;
+            cy.addItem(addItems,selectItem);
+            const itemsLength =selectItem.numbersItem.length;
+            cy.addItemsExpect(itemsLength,addItems)
+        })
     });
 
 });

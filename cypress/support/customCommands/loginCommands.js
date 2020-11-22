@@ -9,8 +9,5 @@ Cypress.Commands.add("login", (login) => {
     cy.xpath(login.xpathInputEmail).type(login.email);
     cy.xpath(login.xpathInputPassword).type(login.password);
     cy.xpath(login.xpathClick).click();
-    cy.location().should((loc) => {
-        console.log(loc)
-        expect(`${loc.toString()}`).to.eq(`${login.hashExpect}`)
-    });
+    cy.locationExpect(login.hashExpect);
 });
