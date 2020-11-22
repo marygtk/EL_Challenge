@@ -1,0 +1,51 @@
+We have a interface , that describe the funcionally of the test.
+We have a objet where we should write the website's title , that element will be who describe the functionality
+
+For example :"dexter"
+
+"dexter":{
+       "url":"", // in this field we have to write the url's website
+       "login":{ // in this field we describe the login steps
+           "xpachClickSearch":[""],// we will build a array of clicks to go the login's page 
+           "xpathInputEmail":"", // In this field we will write the email xpath
+           "xpathInputPassword":"", // In this field we will write the password xpath
+           "email":"",  //In this field we will write the email value
+           "password":"", //In this field we will write the password value
+           "xpathClick":"", //In this field we will write the button' submit xpath
+           "hashExpect":"" // In this field we will write the url we hope
+           
+       },
+       "search":{
+            "iconSearch":"", //In this field we will write the icon Search's xpath and then we will go to click it
+            "inputSearch":"", //In this field we will write the input Search's xpath and then we will go to type it the value
+            "inputValue":"", // In this field we will write the input value
+            "sendForm":"", //In this field we will write the button submit's xpath and then we will go to click it
+            "expectUrl":"" // In this field we will write the url we hope
+        },
+        "selectItem":{
+            "item":"", // in this feild we will write the common xpath of the all list item for example : "div/ul/li"
+            "numbersItem":["[1]","[2]","[3]"] // In this field we will write the complete to the common url, this complements identifies the item we want to go
+        },
+        "addItems":{
+            "clickOnItems":[ ],//In this field we will write a list of the xpaths where we are going to click to add item,
+            "cartAccountItems":"" // In this field we will write the xpath where we can find the amount of item in the cart
+        },
+        "deleteItems":{
+            "cart":"" // In this field we will write the cart xpath and then we wiil click it ,
+            "item":"", // in this feild we will write the common xpath of the all list item for example : "div/ul/li"
+            "clicksToDelete":[// in this feild we will write a list of the objets that describes clicks to delete one items of the cart
+                {
+                    "deleteIcon":"[3]/div/div/div/div[2]/div[1]/div[2]/button",
+                    "confirmDelete":"//*[@id='removeProductModal']/div/div/div[3]/button[2]",
+                    "closeModal":"//*[@id='removeProductModal']/div/div/div[1]/button"
+                },
+            ],
+            "cartAccountItems":"" // In this field we will write the xpath where we can find the amount of item in the cart
+        }
+    }
+
+    
+This would be something appreciated to make an interface or a class that describes a type of object,
+in typed languages ​​such as java, of course these functionalities such as typing and interface can be obtained
+by configuring typescript in our cypress project. The important thing about this is that you can
+ parameterize and reuse functions for similar behavior
