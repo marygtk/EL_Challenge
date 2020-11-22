@@ -14,20 +14,19 @@ describe('Search a random item in a cart', () => {
 
     it('Add Items', ()=>{
         cy.get('@testValues').then((testValues)=>{
+            //Add items to cart
             const {selectItem,addItems} = testValues.dexter;
             cy.addItem(addItems,selectItem);
             const itemsLength =selectItem.numbersItem.length;
-            cy.addItemsExpect(itemsLength,addItems)
+            cy.addItemsExpect(itemsLength,addItems);
+            //Delete items to cart
+            const {deleteItems} = testValues.dexter;
+            cy.deleteItem(deleteItems);
+            cy.wait(2200);
+            cy.deleteItemExpect(itemsLength,deleteItems)
         })
     });
 
-    it('delete Item', () => {
-        cy.get('@testValues').then((testValues)=>{
-            const {deleteItem} = testValues.dexter;
-            cy.deleteItem(deleteItem);
-        })
-    });
-    
     Cypress.on('uncaught:exception', (err, runnable) => {
         console.log(err);
         return false;

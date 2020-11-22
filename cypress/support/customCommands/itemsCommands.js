@@ -26,11 +26,19 @@ Cypress.Commands.add("addItem", (addItems,selectItem) => {
     });
 });
 
-Cypress.Commands.add("deleteItem", (deleteItem) => {
-    const {cart, deleteItems, confirmDelete} = deleteItem;
+Cypress.Commands.add("deleteItem", (deleteItems) => {
+    const {cart, clicksToDelete,item,closeModal} = deleteItems;
     cy.xpath(cart).click();
-    cy.xpath(deleteItems).click();
-    cy.xpath(confirmDelete).click();
+    clicksToDelete.forEach(element => {
+        cy.xpath(`${item}${element.deleteIcon}`).click();closeModal;
+        if (element.closeModal) {
+            cy.xpath(element.closeModal).click();
+        }
+        if(element.confirmDelete){
+            cy.xpath(element.confirmDelete).click();
+        }
+    });
+
 });
 
 

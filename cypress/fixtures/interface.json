@@ -31,45 +31,29 @@
             ],
             "cartAccountItems":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[1]/div[1]/div[3]/div[1]/a/span"
         },
-        "deleteItem":{
-            "cart":"//header/nav[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/a[1]/i[1]",
-            "deleteItems":"//body/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]",
-            "confirmDelete":"//body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[3]/button[2]"
-
+        "deleteItems":{
+            "cart":"/html/body/div[1]/header/nav/div[1]/div/div/div[2]/div[1]/div[1]/div[3]/div[1]/a",
+            "item":"//*[@id='maincontent']/div[3]/div[1]/div[1]/div",
+            "clicksToDelete":[
+                {
+                    "deleteIcon":"[3]/div/div/div/div[2]/div[1]/div[2]/button",
+                    "confirmDelete":"//*[@id='removeProductModal']/div/div/div[3]/button[2]",
+                    "closeModal":"//*[@id='removeProductModal']/div/div/div[1]/button"
+                },
+                {
+                    "deleteIcon":"[2]/div/div/div/div[2]/div[1]/div[2]/button",
+                    "confirmDelete":"//*[@id='removeProductModal']/div/div/div[3]/button[2]",
+                    "closeModal":"//*[@id='removeProductModal']/div/div/div[1]/button"
+                },
+                {
+                    "deleteIcon":"[1]/div/div/div/div[2]/div[1]/div[2]/button",
+                    "confirmDelete":"//*[@id='removeProductModal']/div/div/div[3]/button[2]",
+                    "closeModal":"//*[@id='removeProductModal']/div/div/div[1]/button"
+                }
+            ],
+            "cartAccountItems":"/html/body/div[1]/header/nav/div[1]/div/div/div[2]/div[1]/div[1]/div[3]/div[1]/a/span"
         }
     },
-   "isadora":{
-        "url":"https://ar.isadoraonline.com/?gclid=CjwKCAiA7939BRBMEiwA-hX5J6ZMAKNge4EsQI3OgZS8-cJpwv8Bds9j3zj37D1mNzqqLUbyr6tTmhoCKUkQAvD_BwE",
-        "login":{
-            "xpachClickSearch":[
-                "//*[@id='header']/div[1]/div[2]/div[2]/div/div[2]/a",
-                "//*[@id='header-account']/div/ul/li[5]/a"
-            ],
-            "xpathInputEmail":"//*[@id='email']",
-            "xpathInputPassword":"//*[@id='pass']",
-            "email":"qatestingexample@gmail.com",
-            "password":"Qatesting12!",
-            "xpathClick":"//*[@id='send2']",
-            "hashExpect":"customer/account/"
-            
-        },
-        "search":{
-            "iconSearch":"//*[@id='header']/div[1]/div[2]/div[2]/div/div[3]/a",
-            "inputSearch":"//*[@id='search']",
-            "inputValue":"reloj",
-            "sendForm":"//*[@id='search_mini_form']/div[1]/button",
-            "expectUrl":"https://ar.isadoraonline.com/catalogsearch/result/?q=reloj"
-        },
-        "selectItem":{
-            "item":"//*[@id='top']/body/div[1]/div/div[2]/div/div/div[3]/div[3]/ul/li",
-            "numbersItem":["[1]"]
-        },
-        "addItems":{
-            "clickOnItems":[
-                "//span[contains(text(),'Comprar')]"
-             ] 
-        }
-   },
     "automationPractice":{
         "url":"http://automationpractice.com/index.php",
         "login":{
@@ -93,12 +77,24 @@
         },
         "selectItem":{
             "item":"//*[@id='center_column']/ul/li",
-            "numbersItem":["[1]/div/div[1]/div"]
+            "numbersItem":["[1]/div/div[1]/div","[2]/div/div[1]/div"]
         },
         "addItems":{
             "clickOnItems":[
                 "//*[@id='add_to_cart']/button",
                 "//*[@id='layer_cart']/div[1]/div[1]/span"
+            ],
+            "cartAccountItems":"//*[@id='header']/div[3]/div/div/div[3]/div/a/span[1]"
+        },
+        "deleteItems":{
+            "cart":"//*[@id='header']/div[3]/div/div/div[3]/div/a",
+            "item":"//*[@id='cart_summary']/tbody/tr",
+            "clicksToDelete":[
+                {
+                    "deleteIcon":"[2]/td[7]/div/a",
+                    "confirmDelete":"",
+                    "closeModal":""
+                }
             ],
             "cartAccountItems":"//*[@id='header']/div[3]/div/div/div[3]/div/a/span[1]"
         }

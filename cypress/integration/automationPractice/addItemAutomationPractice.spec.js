@@ -18,6 +18,11 @@ describe('Search and select item', () => {
             cy.addItem(addItems,selectItem);
             const itemsLength =selectItem.numbersItem.length;
             cy.addItemsExpect(itemsLength,addItems)
+            //Delete items 
+            const {deleteItems} = testValues.automationPractice;
+            cy.deleteItem(deleteItems);
+            cy.wait(2200);
+            cy.deleteItemExpect(itemsLength,deleteItems)
         })
     });
 
