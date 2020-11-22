@@ -26,6 +26,12 @@ Cypress.Commands.add("addItem", (addItems,selectItem) => {
     });
 });
 
+Cypress.Commands.add("deleteItem", (deleteItem) => {
+    const {cart, deleteItems, confirmDelete} = deleteItem;
+    cy.xpath(cart).click();
+    cy.xpath(deleteItems).click();
+    cy.xpath(confirmDelete).click();
+});
 
 
 

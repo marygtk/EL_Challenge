@@ -1,0 +1,46 @@
+Pre-screening questions:
+
+1) When would you plan/start automation for a project? What would be your pre-requisites?
+
+Answer: The principal steps to follow will be analyze the documentation provided where the requisits where explained, I would start to write the tests plans/Suite in TestLink
+or JIRA. The I would start to setup define the gitflow. Build the repository, and start define the test automation arquitecture.
+
+2) If you have to automate scripts for 2 or more websites that have similar functionality,
+what would your automation approach be?
+
+Answer: I would make a reusable code/functions and then the only thing to run the test will be a .json file that that passes the required information on each function.
+The Key is to develop reusable code.
+
+3) Define ypur strategy on integration of automation with CI/CD.
+
+5) How would you strategize a release in Agile?
+I would use scrum methodologies, I would devide the first steps metioned con the first questions into one sprint that has periods of 1or 2 weeks. I would make User
+Histories into the JIRA backlog and create subtasks there. 
+
+6) You are working on a time sensitive project and you realize the quality of the code is not
+satisfactory. How would you handle this situation?
+
+Answer: The times of delivery are always very short, so its something to face daily in IT jobs. I would try to read the code,
+ try to fix the arquitecture planted for the cases's escenarios, and then evaluate if some 
+functions of the application to test can be effectivly automated, 
+if the code is very badly builded I would build the whole scripts again. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+For this Automation test are going to be tested 2 websites, for reusable code.
+Tecnologies to use: NodeJs with Cypress
+
+Pre-requisites:
+
+1. Setup the project installing NodeJs, and Cypress npm package also install npm cypress-xpath 
+
+Git clone httt
+
+cmd> npm i 
+
+
+
+Test Suite
+
+
+

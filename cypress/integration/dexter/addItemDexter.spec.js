@@ -21,6 +21,13 @@ describe('Search a random item in a cart', () => {
         })
     });
 
+    it('delete Item', () => {
+        cy.get('@testValues').then((testValues)=>{
+            const {deleteItem} = testValues.dexter;
+            cy.deleteItem(deleteItem);
+        })
+    });
+    
     Cypress.on('uncaught:exception', (err, runnable) => {
         console.log(err);
         return false;

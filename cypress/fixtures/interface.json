@@ -30,6 +30,12 @@
                 "//*[@id='maincontent']/div/div[2]/div[3]/div[5]/div[8]/div/div/div/div/div[1]/button"
             ],
             "cartAccountItems":"//*[@id='mainContainer']/header/nav/div[1]/div/div/div[2]/div[1]/div[1]/div[3]/div[1]/a/span"
+        },
+        "deleteItem":{
+            "cart":"//header/nav[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/a[1]/i[1]",
+            "deleteItems":"//body/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]",
+            "confirmDelete":"//body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[3]/button[2]"
+
         }
     },
    "isadora":{
